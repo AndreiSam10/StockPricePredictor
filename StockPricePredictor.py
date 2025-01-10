@@ -117,12 +117,15 @@ def readFiles():
                             break
                     if cnt == 0:
                         print('Error! Empty file!!')
+                        file.close()
                         continue
                     if foundTimestamp == False:
                         print('Error! Could not find the required timestamp!!!')
+                        file.close()
                         continue
                     if rowCount != 10:
                         print('Error! Could not read the first 10 rows!')
+                        file.close()
                         continue
                     #print(resultList)
                     file.close()
