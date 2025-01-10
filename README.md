@@ -1,4 +1,21 @@
-# StockPricePredictor
+# StockPricePredictor Python version
+Download StockPricePredictor.py
+Place the relevant Exchange folders containing the Input Files in the same directory with the source file.
+
+Configure inside the Python file at the top, the Number of files to process, Exchange Name and Reference Timestamp like below:
+e.g.
+numberOfFiles = 2
+exchangeName = 'LSE'
+referenceTimestamp = '10-09-2023'
+
+Running the application:
+/bin/python3.12 /home/ec2-user/work/StockPricePredictor/StockPricePredictor.py
+
+Go to the exchange folder that is analysed and check for the generated output files:
+e.g. FLTR_Prediction.csv (StockName_Prediction.csv format)
+
+
+# StockPricePredictor C++ version
 Download StockPricePredictor.cpp and StockPricePredictor.h
 Place the relevant Exchange folders containing the Input Files in the same directory with the source and header files.
 
