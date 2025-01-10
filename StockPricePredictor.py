@@ -117,10 +117,13 @@ def readFiles():
                             break
                     if cnt == 0:
                         print('Error! Empty file!!')
+                        continue
                     if foundTimestamp == False:
                         print('Error! Could not find the required timestamp!!!')
+                        continue
                     if rowCount != 10:
                         print('Error! Could not read the first 10 rows!')
+                        continue
                     #print(resultList)
                     file.close()
                     predictNextStockPrice(resultList)
